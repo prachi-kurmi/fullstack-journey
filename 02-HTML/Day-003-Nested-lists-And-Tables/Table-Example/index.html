@@ -1,0 +1,179 @@
+<!-- ================== HTML TABLES ========================  -->
+
+<!-- 
+ Basic syntax of a table:
+   <table> : Defines the table
+   <tr>    : Defines a row (table row)
+   <td>    : Defines data/cell inside a row
+   <th>    : Defines header cell
+   <thead>, <tbody>, <tfoot> → For semantic structure
+   border="1" : Adds borders to the table
+-->
+
+<p>Example 1 Basic Table</p>
+<table border="1">
+    <!-- Table Header Row -->
+    <tr>
+        <td>Name</td>
+        <td>Role</td>
+    </tr>
+    <!-- Table Data Rows -->
+    <tr>
+        <td>Rohit</td>
+        <td>Frontend Developer</td>
+    </tr>
+    <tr>
+        <td>Mohit</td>
+        <td>Backend Developer</td>
+    </tr>
+    <tr>
+        <td>Anjali</td>
+        <td>Full Stack Developer</td>
+    </tr>
+</table>
+
+<hr/>
+
+<p>Example 2 Table with Semantic Tags</p>
+<table border="1">
+    <!-- Table Head Section -->
+    <thead>
+        <tr>
+           <th>Item</th>
+           <th>Quantity</th>
+           <th>Price</th>
+        </tr>
+    </thead>
+
+    <!-- Table Body Section -->
+    <tbody>
+        <tr>
+            <td>Apple</td>
+            <td>10</td>
+            <td>$1.00</td>
+        </tr>
+        <tr>
+            <td>Orange</td>
+            <td>5</td>
+            <td>$1.50</td>
+        </tr>
+    </tbody>
+
+    <!-- Table Footer Row -->
+    <tfoot>
+        <tr>
+            <td>Total</td>
+            <td>15</td>
+            <td>$2.50</td>
+        </tr>
+    </tfoot>
+</table>
+
+<hr/>
+
+<p>Example 3 Using colspan </p>
+<!-- colspan - merges multiple columns into one -->
+<table border="1">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Contact Info</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>John Doe</td>
+            <td>6745238909</td>
+            <td>john@example.com</td>
+        </tr>
+        <tr>
+            <td>Cooper</td>
+            <td>6745231278</td>
+            <td>cooper@example.com</td>
+        </tr>
+        <tr>
+            <td>Mohan</td>
+            <td>8765432109</td>
+            <td>mohan@example.com</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr/>
+
+<p>Example 4 Using rowspan</p>
+<!-- rowspan → merges multiple rows into one -->
+<table border="1">
+    <thead>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2">Row 1 Cell 1</td>
+            <td>Row 1 Cell 2</td>
+            <td>Row 1 Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2 Cell 2</td>
+            <td>Row 2 Cell 3</td>
+        </tr>
+        <!-- Example with colspan spanning across 3 columns -->
+        <tr>
+            <td colspan="3">Row 3 Cell 1</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr/>
+
+<p>Example 5 Complex Table (Nested Levels)</p>
+<!-- 
+  Row/Column Span Example with Hierarchy:
+   - rowspan used to merge cells vertically
+   - colspan used to merge cells horizontally
+   - Helps represent hierarchical data clearly -->
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Level 1</th>
+            <th>Level 2</th>
+            <th>Level 3</th>
+            <th>Level 4</th>
+            <th>Level 5</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="6">System</td>
+            <td rowspan="4">System Apps</td>
+            <td rowspan="3">System Env</td>
+            <td>App Test</td>
+            <td rowspan="2">Foo</td>
+        </tr>
+        <tr>
+            <td>App Memory</td>
+        </tr>
+        <tr>
+            <td>App Test</td>
+            <td rowspan="2">Bar</td>
+        </tr>
+        <tr>
+            <td>System Env 2</td>
+            <td>App Memory</td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2">System Memory</td>
+            <td>Memory Func</td>
+            <td>Foo</td>
+        </tr>
+        <tr>
+            <td>Apes Test</td>
+            <td>Bar</td>
+        </tr>
+    </tbody>
+</table>
