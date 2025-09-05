@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>University Registration Form</h1>
+
+    <p>Please fill out the form to register.</p>
+
+    <hr/>
+
+    <form>
+        <h2>Personal Details</h2>
+
+        <label for="name">First Name:</label>
+        <input type="text" name="name" id="name" placeholder="e.g: Damon" required>
+        <!-- required is used to make the field important -->
+
+        <br/><br/>
+
+        <label for="surname">Last Name:</label>
+        <input type="text" name="surname" id="surname" placeholder="e.g: Salvatore">
+
+        <br/><br/>
+
+        <label for="dob">DOB:</label>
+        <input type="date" name="dob" id="dob">
+
+        <br/><br/>
+
+        <h3>Gender:</h3>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+
+        <br/>
+
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+
+        <br/>
+
+        <input type="radio" name="gender" id="other" value="other">
+        <label for="other">Other</label>
+
+        <br/><br/>
+
+        <label for="file">Upload Your Photo</label>
+        <br>
+        <input type="file" name="file" id="file">
+
+        <hr/>
+
+        <h2>Contact Information</h2>
+
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" placeholder="damon@example.com">
+        <br/><br/>
+
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone" placeholder="e.g., 5463789123">
+        <br/><br/>
+
+        <label for="address">Mailing Address</label>
+        <br/>
+        <!-- <textarea> is used when we need a big text box (multi-line).
+             Example: feedback form, comments, messages.
+             Unlike <input type="text"> (which is single line), <textarea> allows multiple lines.
+             We can control its rows (height) and cols (width).  -->
+        <textarea name="address" id="address" rows="10" cols="30" placeholder="Street Address, City, State, ZIP Code"></textarea>
+
+        <hr/>
+
+        <h2>Academic Information</h2>
+        <!-- dropdown  lets user choose one option from a list. Use with <select> tag. Each choice is written inside <option> tag.-->
+
+        <label for="course">Select Your Course:</label>
+        <br>
+        <select name="course" id="course">
+            <option value="" disabled selected>Select Your Course</option>
+            <option value="CSE">CSE</option>
+            <option value="ME">ME</option>
+            <option value="CE">CE</option>
+        </select>
+
+        <h3>Extracurricular Activities:</h3>
+        <input type="checkbox" name="interest" id="Sports" value="Sports">
+        <label for="Sports">Sports</label>
+
+        <br/>
+        <input type="checkbox" name="interest" id="Music" value="Music">
+        <label for="Music">Music</label>
+        
+        <br/>
+        <input type="checkbox" name="interest" id="TechnologyClub" value="Technology Club">
+        <label for="TechnologyClub">Technology Club</label>
+        
+        <br/>
+        <input type="checkbox" name="interest" id="Volunteering" value="Volunteering">
+        <label for="Volunteering">Volunteering</label>
+        
+        <br/><br/>
+
+        <hr/>
+
+        <h2>Create Your Account</h2>
+
+        <label for="password">Create Password</label>
+        <input type="password" name="password" id="password">
+
+        <br><br>
+        <label for="question">Security Question:</label>
+        <select id="question" name="question">
+            <option value="petName">What was your first pet's name?</option>
+            <option value="birthCity">In which city were you born?</option>
+            <option value="schoolName">What was the name of your first school?</option>
+            <option value="favFood">What is your favorite food?</option>
+        </select>
+
+        <br><br>
+
+        <label for="secure">Security Answer:</label>
+        <input type="text" id="secure" name="secure">
+        <br><br>
+
+        <input type="checkbox" id="terms" name="terms">
+        <label for="terms">I agree to the Terms and Conditions.</label>
+        <br><br>
+
+        <hr>
+        <button type="submit">Register</button>
+        <button type="reset">Clear Form</button>
+
+    </form>
+</body>
+</html>
