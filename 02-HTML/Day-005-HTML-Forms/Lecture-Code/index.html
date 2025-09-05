@@ -1,0 +1,89 @@
+<!-- Form : Most used thing in websites  
+ Login / Signup page  
+ User information is submitted and saved in database  
+ Forms are used everywhere in web development -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Form tag is used to create a form -->
+    <form>
+
+        <!-- input is used to create input box and type tells what kind of data it will take -->
+        <!-- label tells the user what they need to fill -->
+
+        <label>Name:</label>
+        <input type="text" name="userName">
+
+        <br><br>
+
+        <label>Age:</label>
+        <input type="number" name="useAge">
+
+        <br><br>
+
+        <!-- password should not be visible so we use password type -->
+        <label>Password:</label>
+        <input type="password" name="userPassword">
+
+        <br><br>
+
+        <label>Father Name:</label>
+        <input type="text" name="userFatherName">
+
+        <!-- name attribute is used to send data to backend in key-value pair  
+             If user fills only some information and submits the form, backend may get confused.  
+             So name attribute helps to match data properly in backend. -->
+
+        <!-- Example after submit:  
+             http://127.0.0.1:5500/form.html?userName=Elena+&useAge=22&userPassword=78783748o&userFatherName=David -->
+
+        <!-- When we submit the form, info becomes visible in URL  -->
+        <br><br>
+
+        <!-- Radio Button : name should be same so only one option can be selected -->
+        <!-- 'for' is used because sometimes circle is small.  
+             When we click on text, it should also select the circle.  
+             So we connect label with input using id (id is unique). -->
+
+        <label for="male">Male:</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="female">Female:</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="other">Other:</label>
+        <input type="radio" name="gender" id="other" value="other">
+
+        <!-- Example wrong case without value:  
+             userName=Elena+&useAge=23&userPassword=1234&userFatherName=David&gender=on  
+             Here backend only gets 'on' → not useful -->
+
+        <!-- With value:  
+             http://127.0.0.1:5500/form.html?userName=Elena+&useAge=23&userPassword=12345&userFatherName=David&gender=female -->
+        <br><br>
+
+        <!-- Checkbox : we also use value to tell backend what data is sent -->
+        <label for="c++">C++</label>
+        <input type="checkbox" name="subject" id="c++" value="c++">
+        <label for="java">Java</label>
+        <input type="checkbox" name="subject" id="java" value="java">
+        <label for="python">Python</label>
+        <input type="checkbox" name="subject" id="python" value="python">
+        <label for="javascript">Javascript</label>
+        <input type="checkbox" name="subject" id="javascript" value="javascript">
+
+        <!-- Example:  
+             http://127.0.0.1:5500/form.html?userName=Elena+&useAge=23&userPassword=1234567&userFatherName=David&gender=female&subject=java&subject=python -->
+        <br><br>
+
+        <!-- submit button to send form -->
+        <input type="submit">
+    </form>
+
+</body>
+</html>
