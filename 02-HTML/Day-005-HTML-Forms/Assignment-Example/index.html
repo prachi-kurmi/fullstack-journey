@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+    
+    <h1>Job Application: Senior Web Developer</h1>
+    <p>Thank you for your interset in joining our teams. Please fill out the application below.</p>
+
+    <hr/>
+
+    <form>
+        <h2>Personal Information</h2>
+
+        <label for="userName">Full Name:</label>
+        <br/>
+        <input type="text" name="userName" id="userName" required>
+
+        <br/><br/>
+
+        <label for="email">Email:</label>
+        <br/>
+        <input type="text" name="email" id="name" required>
+
+        <br/><br/>
+
+        <label for="phone">Phone:</label>
+        <br/>
+        <input type="tel" name="phone" id="phone">
+
+        <br/><br/>
+
+        <label for="linkedin">LinkedIn Profile URL:</label>
+        <br/>
+        <input type="text" name="linkedin" id="linkedin" placeholder="https://www.linkedin.com/in/username/">
+
+        <br/><br/>
+
+        <hr/>
+
+        <h2>Professional Experiece</h2>
+
+        <label for="file">Upload Your Resume (PDF or DOCX):</label>
+        <br/>
+        <input type="file" name="fileUpload" id="file" required>
+
+        <br/><br/>
+
+        <label for="coverLetter">Cover Letter:</label>
+        <br/>
+        <textarea name="coverLetter" id="coverLetter" rows="10" cols="20" placeholder="Tell us why you're a great fit for this role..."></textarea>
+
+        <br/><br/>
+
+        <label for="experience">Years of Professional Experiece</label>
+        <br/>
+        <input type="number" min="0" max="20" id="experience" name="experience" required>
+
+        <br/><br/>
+
+        <label for="joining">Earliest Possible Start Date:</label>
+        <br/>
+        <input type="date" id="joining" name="joiningDate">
+
+        <br/><br/>
+
+        <hr/>
+
+        <h2>Skills & Availability</h2>
+
+        <label>Primary Skillset (Choose One):</label>
+        <br/>
+
+        <input type="radio" name="developer" id="frontend" value="FrontendDeveloper">
+        <label for="frontend">Frontend Development</label>
+        <br/>
+
+        <input type="radio" name="developer" id="backend" value="BackendDeveloper">
+        <label for="backend">Backend Development</label>
+        <br/>
+
+        <input type="radio" name="developer" id="fullstack" value="Full-StackDevelopment">
+        <label for="fullstack">Full-Stack Development</label>
+
+        <br/><br/>
+
+        <label>Additional Skills (Select all that apply):</label>
+        <br/>
+
+        <input type="checkbox" name="skills" id="react" value="react">
+        <label for="react">React</label>
+        <br/>
+
+        <input type="checkbox" name="skills" id="node" value="node">
+        <label for="node">Node.js</label>
+        <br/>
+
+        <input type="checkbox" name="skills" id="database" value="database">
+        <label for="database">Database Management</label>
+        <br/>
+
+        <input type="checkbox" name="skills" id="cloud" value="cloud/devops">
+        <label for="cloud">Cloud/Devops</label>
+
+        <br/><br/>
+
+        <label for="workType">Preferred Work Type:</label>
+        <br/>
+        <select name="workType" id="workType">
+            <option value="Full-time">Full-Time</option>
+            <option value="Part-time">Part-time</option>
+            <option value="Hybrid">Hybrid</option>
+            <option value="On-Site">On-Site</option>
+        </select>
+
+        <br/><br/>
+
+        <hr/>
+
+        <h2>Final Confirmation</h2>
+        
+        <input type="checkbox" id="terms" value="terms">
+        <label for="terms">I am legally authorized to work in this country.</label>
+
+        <br/><br/>
+
+        <label for="question">How did you hear about us?</label>
+        <br/>
+        <input type="text" id="question" name="question"  placeholder="e.g.,LinkedIn, company">
+
+        <br/><br/>
+
+        <button type="submit">Submit Application</button>
+        <button type="reset">Clear Form</button>
+
+    </form>
+
+</body>
+</html>
