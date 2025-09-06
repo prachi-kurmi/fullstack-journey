@@ -12,6 +12,9 @@ It contains **lecture notes, practice code** for each day of the course.
 | 1   | Introduction to Web Development (Internet Working) | ✅ Completed | [Lecture](https://youtu.be/1pcikNlDB-4?si=7RJWwJuvc7JJruxj) |
 | 2   | HTML Introduction|  ✅ Completed | [Lecture](https://youtu.be/GkZN_-HMCJ8?si=YKG8TFzPwCoRhAkK) |
 | 3   | Nested List & Tables|  ✅ Completed | [Lecture](https://youtu.be/AJ4E1zf5tQs?si=H_kbl7pqWq_fMic-) |
+| 4   | File Path & Boilerplate |  ✅ Completed | [Lecture](https://youtu.be/k78lNSAB8VY?si=7MJEISgt_MJJ6dAG) |
+| 3   | HTML Forms|  ✅ Completed | [Lecture](https://youtu.be/a4j9R_DvZ8M?si=59qOW5jqNuRzZvwS) |
+
 
 
 
