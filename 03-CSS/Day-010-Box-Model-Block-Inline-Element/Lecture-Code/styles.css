@@ -1,0 +1,90 @@
+/*  Universal selector: remove the default margin and padding
+*{
+    margin: 0px;
+    padding: 0px;
+} 
+*/
+
+h1{
+    background-color: pink;
+    height: 200px;
+    width: 200px;
+    
+    /* border-style: solid;
+    border-color: red;
+    border-width: 10px;
+    border-radius: 10px; */
+
+
+    /* Short-hand notation */
+    border: 10px solid red;
+}
+
+h2{
+    background-color: orange;
+    height: 100px;
+    width: 100px;
+
+    /* Apply to all sides */
+    /* padding: 10px;   */
+
+    /* Individual  */
+    /* padding-left: 10px;
+    padding-bottom: 40px; */
+
+    /* top right bottom left */
+    padding: 10px 20px 30px 40px;
+
+    /* Apply to all sides */
+    /* margin: 10px; */
+
+    /* top & bottomn , right & left */
+    margin: 20px 40px;
+
+}
+
+/* Take only the content width and vertically padding and margin is not supported*/
+span{
+   background-color: aqua;
+   padding-left: 20px;
+   margin-left: 30px;
+   /* Due to background color the padding top and bottom will be visually visible but not applicale */
+   /* padding-top: 10px; */
+}
+
+/* Block Level element */
+h3{
+    background-color: aquamarine;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: content-box; /* By this propety it will take only content width */
+}
+
+/* to change properrty from inline to block and block to inline  */
+#first{
+    display: block;
+    background-color: cadetblue;
+    height: 200px;
+    width: 100px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    box-sizing: border-box; /* all things will be caculated and its size become less*/
+}
+
+#second{
+    background-color: blanchedalmond;
+    display: inline;
+    /* height:200px;
+    width: 100px; */
+}
+
+#third{
+    background-color: aquamarine;
+    display: inline-block;
+    height: 100px;
+    width: 200px;
+    padding: 10px 20px 30px 40px;
+    margin: 10px 40px;
+}
