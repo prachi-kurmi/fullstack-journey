@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: grid;
+    height: 500px;
+    width: 800px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.box1{
+    background-color: lightgreen;
+}
+
+.box2{
+    background-color: rgb(247, 106, 106);
+}
+
+.box3{
+    background-color: rgb(244, 244, 137);
+}
+
+.first{
+    grid-row: 1/4;
+}
+
+.second{
+    grid-column: 2/4;
+}
+
+.sixth{
+    grid-row: 2/4;
+    grid-column: 4/5;
+}
