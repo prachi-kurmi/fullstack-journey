@@ -1,0 +1,343 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1e1e1e;
+    font-family: sans-serif;
+    color: #a0a0a0;
+    line-height: 1.6;
+}
+
+.main-container{
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: 350px 1fr;
+    gap: 40px;
+    padding-top: 40px;
+    margin: auto; /* Apply only left and right side */
+}
+
+.sidebar{
+    height: 90vh;
+    background-color: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 16px;
+    padding: 30px;
+    position: sticky;
+    top: 40px;
+}
+
+.main-content{
+    background-color: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 16px;
+    padding: 40px;
+}
+
+/* ============= Profile section ================== */
+.profile-info{
+    /* Center the every inline element, h2 content goes to center */
+    text-align: center;
+}
+
+.profile-info img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 1px solid #3a3a3a;
+}
+
+.profile-info h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 10px;
+    color: #e0e0e0;
+}
+
+.profile-info p{
+    background-color: #1e1e1e;
+    padding: 5px 15px;
+    color: #ee4f8c;
+    border: 1px solid #3a3a3a;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* ======================== Contact section ===================== */
+
+.contact-info{
+    margin-top: 20px;
+    border-top: 2px solid #3a3a3a;
+    padding-top: 20px;
+}
+
+.label{
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #a0a0a0;
+}
+
+.value{
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+.email, .phone{
+    margin-bottom: 15px;
+}
+
+/* ====================== Social ================= */
+
+.social-info{
+    margin-top: 20px;
+    border-top: 2px solid #3a3a3a;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.social-info img{
+    height: 24px;
+    width: 24px;
+    margin-left: 5px;
+    filter: grayscale(1) invert(0.7);
+    transition: filter 0.3s ease;
+}
+
+.social-info img:hover{
+    filter: grayscale(0) invert(0);
+}
+
+/* ================== Main Content =================== */
+
+/* ================== Navigation ==================== */
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+#navigation{
+    border-bottom: 2px solid #3a3a3a;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #a0a0a0;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.active, nav a:hover{
+    color: #ee4f8c;
+}
+
+/* ============================= About Me ======================== */
+
+.heading{
+    color: #e0e0e0;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.line{
+    width: 60px;
+    height: 5px;
+    background-color: #ee4f8c;
+    margin-bottom: 15px;
+}
+
+.content{
+    text-align: justify;
+    color: #a0a0a0;
+}
+
+#about{
+    margin-bottom: 40px;
+}
+
+/* ============================== Skills Section ================================== */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(120px,1fr));
+    gap: 35px;
+}
+
+.grid-item{
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #3a3a3a;
+    background-color: #1e1e1e;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item img{
+    height: 48px;
+    width: 48px;
+    filter: invert(77%) sepia(45%) saturate(6800%) hue-rotate(310deg) brightness(103%) contrast(102%);
+    margin-bottom: 15px;
+}
+
+.grid-item h3{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.grid-item:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* =============================== Education ======================= */
+
+#education{
+    margin-top: 30px;
+}
+
+.ed-tech{
+    position: relative;
+    margin-top: 20px;
+}
+
+.year{
+    font-size: 0.9rem;
+    color: #a0a0a0;
+    margin-bottom: 5px;
+}
+
+.degree{
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.college{
+    font-style: italic;
+    color: #a0a0a0;
+    margin-bottom: 10px;
+}
+
+.work{
+    color: #a0a0a0;
+}
+
+.education-first, .education-second{
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.circle{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 3px solid #ee4f8c;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    z-index: 1;
+}
+
+.side-line{
+    position: absolute;
+    width: 2px;
+    top: 0px;
+    bottom: 0px;
+    left: 5px;
+    border: 2px solid #3a3a3a;
+}
+
+/* ================================ Portfolio ================================= */
+
+.project-container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.projects{
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    border: 1px solid #3a3a3a;
+    overflow: hidden;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.projects:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3) ;
+}
+
+.projects img{
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card{
+    padding: 20px;
+}
+
+.card h3{
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.card p{
+    color: #a0a0a0;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.card span{
+    background-color: rgba(238, 79, 140, 0.12);
+    color: #ee4f8c;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    margin-right: 5px;
+}
+
+/* =============================== Responsiveness =============================== */
+
+@media screen and (max-width:1200px) {
+    .main-container{
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .sidebar{
+        position: static;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .project-container{
+        grid-template-columns: 1fr;
+    }
+
+    #navigation nav {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .sidebar{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+}
